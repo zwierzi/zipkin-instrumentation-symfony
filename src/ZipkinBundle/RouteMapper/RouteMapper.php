@@ -13,7 +13,7 @@ final class RouteMapper
      */
     private $routes;
 
-    private function __construct(array $routes = null)
+    private function __construct(?array $routes = null)
     {
         $this->routes = $routes;
     }
