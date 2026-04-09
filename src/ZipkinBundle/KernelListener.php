@@ -68,8 +68,8 @@ final class KernelListener
 
     public function __construct(
         HttpServerTracing $httpTracing,
-        RouteMapper $routeMapper = null,
-        LoggerInterface $logger = null,
+        ?RouteMapper $routeMapper = null,
+        ?LoggerInterface $logger = null,
         array $serverTags = []
     ) {
         $this->tracer = $httpTracing->getTracing()->getTracer();
